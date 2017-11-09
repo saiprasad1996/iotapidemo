@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <meta name="description" content="IoT Demo">
+    <meta name="author" content="Sai Prasad">
+    <!-- Mobile Specific Metas
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" rel="stylesheet"
+          type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet"
+          type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>TGIF Tech talk</h1>
+        </div>
+        <div class="row">
+            <h4>Please follow the below links to get started</h4>
+        </div>
+        <div class="row">
+            <a class="button button-primary" href="{% url 'register' %}">Register a Thing</a>
+            <a class="button button-primary" href="{% url 'things' %}">Show all things</a>
+
+        </div>
+    </div>
+</body>
+</html>

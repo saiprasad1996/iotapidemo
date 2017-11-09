@@ -18,6 +18,7 @@ from django.conf.urls import url
 from . import views as thing
 
 urlpatterns = [
+    url(r'^$', view=thing.index, name="index"),
     url(r'^thing/register$', view=thing.thingRegister, name="register"),
     url(r'^things$', view=thing.things, name="things"),
     url(r'^thing/(?P<id>[A-Za-z0-9]+)$', view=thing.readStatus, name="read"),

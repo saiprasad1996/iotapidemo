@@ -36,6 +36,10 @@ def thingRegister(request):
         return render(request, 'api/register.html', {"message": "Registration successful"})
 
 
+def index(request):
+    return render(request, 'api/index.html')
+
+
 def things(request):
     things = list(Things.objects.all())
 
