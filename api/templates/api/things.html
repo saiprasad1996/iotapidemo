@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registered Things</title>
+</head>
+<body>
+
+{% if things %}
+
+<table border="2px">
+    <thead>
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Status</td>
+    </tr>
+    </thead>
+    <tbody>
+    {% for d in things %}
+    <tr>
+        <td>{{ d.id }}</td>
+        <td>{{ d.name }}</td>
+        <td>{{ d.status }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p>No things registered yet</p>
+{% endif %}
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register a thing</title>
+</head>
+<body>
+<form action="{% url 'register' %}" method="post">{% csrf_token %}
+    <input type="text" name="thingname" placeholder="thingname"/>
+    <input type="text" name="thingid" placeholder="thingid"/>
+    <input type="submit" name="submit"/>
+</form>
+{% if status %}
+<p>{{ status }}</p>
+{% endif %}
+</body>
+</html>
